@@ -1,0 +1,68 @@
+.game-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+.base {
+  position: absolute;
+  bottom: 20%;
+  left: 50%; 
+  width: 30%;
+  height: 30%;
+  transform: translateX(-50%);
+  opacity: 0; 
+}
+
+.base img {
+  width: 100%; 
+  height: 100%;
+  object-fit: contain;
+}
+
+.ball {
+  position: absolute;
+  bottom: 30%;
+  left: 20%; 
+  width: 7%; 
+  height: 7%; 
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Start hidden */
+}
+
+.ball img {
+  width: 100%; 
+  height: 100%;
+  object-fit: contain;
+}
+
+.score {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+.start-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2vh 4vw;
+  font-size: 3vw;
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: #ff4500;
+}
